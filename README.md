@@ -32,6 +32,26 @@ on other platforms:
 Both `k8s-authoring` and `k8s-operating` reference these via
 `${CLAUDE_PLUGIN_ROOT}/references/conditional/`.
 
+## Example prompts
+
+**Authoring**
+- "Review my Deployment for production" — adds securityContext, resource
+  requests/limits, liveness/readiness/startup probes, least-privilege RBAC, and a
+  NetworkPolicy, then validates with `--dry-run` and `kubeconform`.
+- "Create a hardened Helm chart for a PostgreSQL StatefulSet with backup CronJobs."
+- "Add RBAC and a default-deny NetworkPolicy to this manifest."
+
+**Operating**
+- "Why is my pod stuck in CrashLoopBackOff / ImagePullBackOff / Pending?" —
+  read-only triage with a fix proposed for your confirmation.
+- "Audit my cluster's RBAC and NetworkPolicy coverage for over-broad access."
+- "My pod is Pending on EKS" — branches into EKS-specific causes (ENI/IP
+  exhaustion, AZ-pinned volumes, IRSA).
+
+**Concepts**
+- "Explain how Services route traffic to Pods."
+- "Explain the Kubernetes control plane like I'm running a company."
+
 ## Install
 
 This repo is its own marketplace:
