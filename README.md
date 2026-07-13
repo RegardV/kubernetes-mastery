@@ -12,6 +12,10 @@ Guidance is grounded in official Kubernetes documentation, the NSA/CISA
 Kubernetes Hardening Guide, the OWASP Kubernetes Top 10, Pod Security Standards,
 and the CIS Kubernetes Benchmark.
 
+> **New to the mental model?** Read [**The Story — Kubernetes explained like a
+> company you're running**](docs/STORY.md). It's the founder/holding-company
+> narrative the `k8s-concepts` skill is built on.
+
 ## Skills
 
 | Skill | Triggers on | What it does |
@@ -82,7 +86,29 @@ The design spec lives at [`docs/DESIGN.md`](./docs/DESIGN.md).
 The **concepts** layer is a self-contained digest of a companion Obsidian
 knowledge base (the author's `k8s-vault`) that expands the same
 founder/holding-company mental model into a linked wiki. The plugin does **not**
-depend on the vault at runtime — the vault is the human-facing deep dive.
+depend on the vault at runtime — the vault is the human-facing deep dive. The
+readable narrative version lives at [`docs/STORY.md`](./docs/STORY.md).
+
+## Credits & prior art
+
+Synthesized fresh, but the design is informed by excellent prior work — credit
+where it's due:
+
+- **[Agent Skills standard](https://agentskills.io)** — the open `SKILL.md`
+  format and progressive-disclosure model (originally by Anthropic).
+- **[LukasNiessen/kubernetes-skill](https://github.com/LukasNiessen/kubernetes-skill)**
+  — the failure-mode-first authoring approach and Conditional Reference Retrieval.
+- **[kubetail-org/kstack](https://github.com/kubetail-org/kstack)** — safe,
+  read-only-by-default live-cluster operations.
+- **[MetalBear — Claude Code skills for Kubernetes](https://metalbear.com/blog/claude-code-skills-for-kubernetes/)**
+  — the lesson that agents need real cluster context, not guesses from logs.
+- **[wshobson/agents](https://github.com/wshobson/agents)** and
+  **[jeffallan/claude-skills](https://github.com/jeffallan/claude-skills)** —
+  patterns for organizing a multi-skill plugin library.
+
+Technical guidance is grounded in the official Kubernetes documentation, the
+NSA/CISA Kubernetes Hardening Guide, the OWASP Kubernetes Top 10, Pod Security
+Standards, and the CIS Kubernetes Benchmark.
 
 ## License
 
