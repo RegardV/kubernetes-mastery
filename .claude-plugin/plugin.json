@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "kubernetes-mastery",
+  "displayName": "Kubernetes Mastery",
+  "version": "0.1.0",
+  "description": "Reason about, author, and safely operate Kubernetes. Three skills: concepts (the founder/company mental model), authoring (failure-mode-first manifest design and review), and operating (read-only-by-default live-cluster triage). Grounded in official Kubernetes docs, the NSA/CISA Hardening Guide, OWASP Kubernetes Top 10, Pod Security Standards, and the CIS Benchmark.",
+  "author": {
+    "name": "RegardV",
+    "url": "https://github.com/RegardV"
+  },
+  "homepage": "https://github.com/RegardV/kubernetes-mastery",
+  "repository": "https://github.com/RegardV/kubernetes-mastery",
+  "license": "MIT",
+  "keywords": [
+    "kubernetes",
+    "k8s",
+    "devops",
+    "sre",
+    "helm",
+    "rbac",
+    "security",
+    "eks",
+    "gke",
+    "troubleshooting"
+  ]
+}

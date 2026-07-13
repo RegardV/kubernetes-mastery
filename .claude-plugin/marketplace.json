@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "regardv-skills",
+  "description": "RegardV's Claude Code plugins.",
+  "owner": {
+    "name": "RegardV"
+  },
+  "plugins": [
+    {
+      "name": "kubernetes-mastery",
+      "source": "./",
+      "description": "Reason about, author, and safely operate Kubernetes — concepts, authoring, and live-cluster operating skills.",
+      "category": "devops",
+      "keywords": ["kubernetes", "k8s", "devops", "sre"]
+    }
+  ]
+}
